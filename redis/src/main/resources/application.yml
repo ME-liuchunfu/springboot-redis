@@ -1,0 +1,15 @@
+
+server:
+  port: 9090
+
+spring:
+  redis:
+    port: 6379
+    password: redis
+    host: 39.108.106.34
+    jedis:
+      pool:
+        max-idle: 6 #最大空闲数
+        max-active: 10 #最大连接数
+        min-idle: 2 #最小空闲数
+      timeout: 2000 #连接超时
